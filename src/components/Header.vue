@@ -1,6 +1,8 @@
 <template>
   <div>
-      <h1>HEADER</h1>
+      <header>
+         <h1>Viú para dummmies</h1>
+      </header>
   </div>
 </template>
 
@@ -12,4 +14,14 @@ export default {
 
 <style>
 
+header {
+background: black;
+text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+	color: #fff;
+
+}
 </style>
