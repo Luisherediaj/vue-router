@@ -3,6 +3,12 @@
       <Browser/>
       <Main/>
       <Footer/>
+      <div>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/contact">Contact</router-link>
+      <router-view />
+      </div>
 </template>
 
 <script>
@@ -28,13 +34,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c3e50;
   display: grid;
-  /* grid-template-areas:
-    'header header header header'
-    'browser main main main'
-    'browser main main main'
-    'footer footer footer footer'; */
-    grid-template-columns: 20rem 50rem;
-  grid-template-rows: 4rem 2.5rem 6rem 6rem 6rem;
+    grid-template-columns: 18rem 60rem;
 }
 
 </style>

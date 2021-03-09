@@ -22,6 +22,10 @@ export default {
   }
     h2 {
         text-align: center;
+        font-size: 2.5rem;
     }
-
+p{
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
 </style>
