@@ -16,6 +16,10 @@ export default {
 </script>
 
 <style>
+  body{
+    padding-top: 2rem;
+    text-align: justify;
+  }
     h2 {
         text-align: center;
     }

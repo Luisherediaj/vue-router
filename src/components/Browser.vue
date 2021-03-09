@@ -1,11 +1,12 @@
 <template>
-  <ul>
-    <li>Rutas</li>
-    <li>Frameworks</li>
-    <li>Documentación</li>
-    <li>Vuex</li>
-    <li>Otras movidas</li>
-  </ul>
+<div class="sidenav">
+    <a href="#">Rutas</a>
+    <a href="#">Frameworks</a>
+    <a href="#">Documentación</a>
+   <a href="#">Vuex</a>
+    <a href="#">Otras movidas</a>
+
+  </div>
 </template>
 
 <script>
@@ -15,28 +16,29 @@ export default {
 </script>
 
 <style>
-ul {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+.sidenav {
+
+  width: 15rem; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+
+  top: 6rem; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+
 }
 
-li {
-    float: left;
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+  display: block;
 }
 
-li {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    border-right: 1px solid #bbb;
-}
-
-
-li:hover {
-    background-color: #111;
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #818181;
 }
 </style>
