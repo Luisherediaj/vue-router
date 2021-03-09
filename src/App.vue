@@ -1,21 +1,21 @@
 <template>
       <Header/>
-      <Browser/>
       <Main/>
       <Footer/>
-      <div>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/contact">Contact</router-link>
-      <router-view />
-      </div>
+     <div id="app">
+        <div id="nav">
+            <router-link to="/">Home</router-link> 
+            <router-link to="/about">About</router-link>
+            <router-link to="/contacto">Contacto</router-link>
+        </div>
+        <router-view/>
+    </div>
 </template>
 
 <script>
 
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
-import Browser from './components/Browser.vue'
 import Footer from './components/Footer.vue'
 
 export default {
@@ -23,8 +23,7 @@ export default {
   components: {
     Header,
     Footer,
-    Main,
-    Browser
+    Main
   }
 }
 </script>
@@ -36,5 +35,29 @@ export default {
   display: grid;
     grid-template-columns: 18rem 60rem;
 }
+#nav {
 
+  width: 15rem; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+
+  top: 6rem; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+
+}
+
+/* The navigation menu links */
+#nav router-link {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+#nav router-link:hover {
+  color: #818181;
+}
 </style>
